@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="toolbar">
+        <div class="toolbar-name">Justin Jakubowski</div>
+        <div class="toolbar-links">
+            <a class="toolbar-link" href="#education"><span>🎓</span>Education</a>
+            <a class="toolbar-link" href="#experience"><span>💼</span>Experience</a>
+            <a class="toolbar-link" href="#skills"><span>🔧</span>Skills</a>
+            <a class="toolbar-link" href="#projects"><span>📁</span>Projects</a>
+            <a class="toolbar-link" href="#hobbies"><span>🏒</span>Hobbies</a>
+            <a class="toolbar-link" href="#contact"><span>✉️</span>Contact</a>
+        </div>
+    </nav>
+    <div class="section-container" id="home">
+        <div class="container home-layout">
+            <div class="home-main">
+                <img src="Headshot.png" alt="Profile Picture" class="profile-pic-large">
+                <div class="intro">
+                    <h1>Justin Jakubowski</h1>
+                    <p>Data/Business Analyst, Software Developer.</p>
+                    <div class="about-section">
+                        <h2>About</h2>
+                        <p>I am a 2025 graduate from Virginia Tech’s Pamplin College of Business with a degree in Business Information Technology. Through my coursework, I built a strong foundation in coding languages including Java, JavaScript, HTML, Python, and CSS. I also developed skills in database management using MySQL and Oracle, as well as data modeling and visualization with tools like Power BI and Tableau. I identify as a hardworking and driven developer who is always seeking opportunities to learn and grow. My recent interests include exploring artificial intelligence and machine learning, particularly using tools like ChatGPT and GitHub Copilot to enhance the way we interact with data and software.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-container" id="education">
+        <div style="display: flex; align-items: center; justify-content: space-between;">
+            <h2>Education</h2>
+            <img src="Virginia-Tech-Logo.png" alt="Virginia Tech Logo" style="height: 56px; margin-left: 24px;">
+        </div>
+        <div style="margin-top: 18px;">
+            <strong>Virginia Tech</strong>
+            <div style="display: flex; align-items: center; margin-top: 4px;">
+                <span>B.S. in Business Information Technology - Decision Support Systems</span>
+                <span style="margin-left: 24px; color: #555;">August 2020 – May 2025</span>
+            </div>
+            <ul style="margin-top: 8px; padding-left: 20px;">
+                <span style="font-weight: bold;">Relevant Coursework</span>
+                <li>Senior Capstone Project - Data Analytics and Visualizations <b>(Tableau)</b></li>
+                <li>Advanced Modeling and Business Analytics <b>(VB.NET, Excel)</b></li>
+                <li>Web-based Development for Decision Support Systems <b>(HTML, JavaScript, Python)</b></li>
+                <li>Database Management & Design <b>(MySQL)</b></li>
+                <li>Data Structures and Algorithms <b>(Java)</b></li>
+            </ul>
+        </div>
+        
+        <!-- Education content here -->
+    </div>
+    <div class="section-container" id="experience">
+        <h2>Experience</h2>
+        <div style="margin-bottom: 28px;">
+            <strong>Replay Institute Baseball, Reston, VA</strong>
+            <span style="float: right; color: #555;">January 2025 – June 2025</span><br>
+            <span>IT Consultant</span>
+            <ul style="margin-top: 8px; padding-left: 20px;">
+                <li>Developed an automated athlete evaluation and reporting system using Google Apps Script</li>
+                <li>Built a Google Sheets interface to input screening data and dynamically generate Google Slides reports</li>
+                <li>Performed requirements gathering and analysis through customer interviews, and maintained a collaborative environment through weekly Microsoft Teams progress meetings</li>
+                <li>Leveraged AI <b>(ChatGPT)</b> to streamline coding and enhance efficiency</li>
+            </ul>
+        </div>
+        <div>
+            <strong>Volkswagen AG, Reston, VA</strong>
+            <span style="float: right; color: #555;">May 2023 – August 2023</span><br>
+            <span>Data Analyst Intern – Post Sales Team</span>
+            <ul style="margin-top: 8px; padding-left: 20px;">
+                <li>Automated weekly sales evaluation using VB.NET and Excel macros, reducing processing time from 1 day to 30 minutes</li>
+                <li>Created descriptive analytics dashboards using advanced Excel macros and visualizations</li>
+                <li>Presented data-driven recommendations to the Director of Post Sales Marketing</li>
+                <li>Collaborated with sales team to improve report accuracy and efficiency</li>
+                <li>Performed QA on reporting datasets to enhance reliability</li>
+            </ul>
+        </div>
+    </div>
+    <div class="section-container" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-tabs">
+            <div class="skill-tab" onclick="toggleSkillTab(this)">
+                <div class="skill-tab-header">Advanced Excel Macro Development</div>
+                <div class="skill-tab-content" style="display:none;">
+                    <div class="skill-bar-container">
+                        <div style="font-weight:600; margin-bottom:4px;">Data Analysis</div>
+                        <div class="skill-bar skill-advanced"></div>
+                        <div class="skill-bar-labels">
+                            <span>Novice</span><span>Intermediate</span><span>Advanced</span><span>Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div style="font-weight:600; margin-bottom:4px;">Visual Graphics</div>
+                        <div class="skill-bar skill-adv-expert"></div>
+                        <div class="skill-bar-labels">
+                            <span>Novice</span><span>Intermediate</span><span>Advanced</span><span>Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-tab" onclick="toggleSkillTab(this)">
+                <div class="skill-tab-header">Data Visualization Tools</div>
+                <div class="skill-tab-content" style="display:none;">
+                    <div class="skill-bar-container">
+                        <div style="font-weight:600; margin-bottom:4px;">Power BI</div>
+                        <div class="skill-bar skill-advanced"></div>
+                        <div class="skill-bar-labels">
+                            <span>Novice</span><span>Intermediate</span><span>Advanced</span><span>Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div style="font-weight:600; margin-bottom:4px;">Tableau</div>
+                        <div class="skill-bar skill-int-adv"></div>
+                        <div class="skill-bar-labels">
+                            <span>Novice</span><span>Intermediate</span><span>Advanced</span><span>Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="skill-tab" onclick="toggleSkillTab(this)">
+                <div class="skill-tab-header">Programming Languages</div>
+                <div class="skill-tab-content" style="display:none;">
+                    <div class="skill-bar-container">
+                        <div style="font-weight:600; margin-bottom:4px;">Java</div>
+                        <div class="skill-bar skill-advanced"></div>
+                        <div class="skill-bar-labels">
+                            <span>Novice</span><span>Intermediate</span><span>Advanced</span><span>Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div style="font-weight:600; margin-bottom:4px;">MySQL</div>
+                        <div class="skill-bar skill-advanced"></div>
+                        <div class="skill-bar-labels">
+                            <span>Novice</span><span>Intermediate</span><span>Advanced</span><span>Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div style="font-weight:600; margin-bottom:4px;">Python</div>
+                        <div class="skill-bar skill-intermediate"></div>
+                        <div class="skill-bar-labels">
+                            <span>Novice</span><span>Intermediate</span><span>Advanced</span><span>Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div style="font-weight:600; margin-bottom:4px;">HTML</div>
+                        <div class="skill-bar skill-advanced"></div>
+                        <div class="skill-bar-labels">
+                            <span>Novice</span><span>Intermediate</span><span>Advanced</span><span>Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div style="font-weight:600; margin-bottom:4px;">CSS</div>
+                        <div class="skill-bar skill-intermediate"></div>
+                        <div class="skill-bar-labels">
+                            <span>Novice</span><span>Intermediate</span><span>Advanced</span><span>Expert</span>
+                        </div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div style="font-weight:600; margin-bottom:4px;">JavaScript</div>
+                        <div class="skill-bar skill-adv-expert"></div>
+                        <div class="skill-bar-labels">
+                            <span>Novice</span><span>Intermediate</span><span>Advanced</span><span>Expert</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        function toggleSkillTab(tab) {
+            var content = tab.querySelector('.skill-tab-content');
+            var isOpen = content.style.display === 'block';
+            document.querySelectorAll('.skill-tab-content').forEach(function(el) { el.style.display = 'none'; });
+            if (!isOpen) content.style.display = 'block';
+        }
+        </script>
+    </div>
+    <div class="section-container" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-tabs">
+            <div class="project-tab" onclick="toggleProjectTab(this)">
+                <div class="project-tab-header">Event Calendar Planner</div>
+                <div class="project-tab-content" style="display:none;">
+                    <div style="margin-bottom: 10px;">A web-based app for organizing tasks and categories, allowing users to manage repeating and overall tasks with a modern UI.</div>
+                    <div class="project-img-group" style="margin-bottom: 12px;">
+                        <img src="screenshots/category.png" alt="Category Screenshot" style="height:120px; margin-right:12px; border-radius:8px; box-shadow:0 2px 8px #bbb;">
+                        <img src="screenshots/index.png" alt="Index Screenshot" style="height:120px; margin-right:12px; border-radius:8px; box-shadow:0 2px 8px #bbb;">
+                        <img src="screenshots/dailyLog.png" alt="Daily Log Screenshot" style="height:120px; border-radius:8px; box-shadow:0 2px 8px #bbb;">
+                    </div>
+                    <div style="margin-bottom: 6px;"><strong>Code:</strong> HTML, CSS, JavaScript</div>
+                    <a href="https://github.com/Justin-Jakubowski/Event-Calendar-Planner" target="_blank" style="color:#2563eb; text-decoration:underline;">View on GitHub</a>
+                </div>
+            </div>
+            <div class="project-tab" onclick="toggleProjectTab(this)">
+                <div class="project-tab-header">Replay Baseball Institute Player Card Generator</div>
+                <div class="project-tab-content" style="display:none;">
+                    <div style="margin-bottom: 10px;">A tool for generating player cards and stats for baseball development, automating data input and report generation.</div>
+                    <div style="margin-bottom: 6px;"><strong>Code:</strong> Google Apps Script, JavaScript, Google Sheets</div>
+                    <a href="https://github.com/Justin-Jakubowski/Replay-Baseball-Institute" target="_blank" style="color:#2563eb; text-decoration:underline;">View on GitHub</a>
+                </div>
+            </div>
+        </div>
+        <script>
+        function toggleProjectTab(tab) {
+            var content = tab.querySelector('.project-tab-content');
+            var isOpen = content.style.display === 'block';
+            document.querySelectorAll('.project-tab-content').forEach(function(el) { el.style.display = 'none'; });
+            if (!isOpen) content.style.display = 'block';
+        }
+        </script>
+    </div>
+    <div class="section-container" id="hobbies">
+        <h2>Hobbies</h2>
+        <div class="hobby-section">
+            <div class="hobby-block">
+                <h3>Hockey</h3>
+                <div class="hobby-img-group">
+                    <figure style="display:inline-block; margin: 0 24px 16px 0;">
+                        <img src="CapitalsGame.jpg" alt="Capitals Game" style="height:160px; border-radius:10px; box-shadow:0 2px 8px #bbb;">
+                        <figcaption style="text-align:center; font-size:0.98em; margin-top:6px;">Canadians vs. Capitals Game 5, 2025</figcaption>
+                    </figure>
+                    <figure style="display:inline-block; margin: 0 0 16px 0;">
+                        <img src="Hockey.jpg" alt="Played hockey most of my life" style="height:160px; border-radius:10px; box-shadow:0 2px 8px #bbb;">
+                        <figcaption style="text-align:center; font-size:0.98em; margin-top:6px;">Played hockey most of my life</figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class="hobby-block">
+                <h3>Snowboarding</h3>
+                <figure style="display:inline-block; margin: 0 0 16px 0;">
+                    <img src="Snowboarding.jpg" alt="Snowboarding" style="height:160px; border-radius:10px; box-shadow:0 2px 8px #bbb;">
+                    <figcaption style="text-align:center; font-size:0.98em; margin-top:6px;">Alberta, Canada</figcaption>
+                </figure>
+            </div>
+            <div class="hobby-block">
+                <h3>Traveling</h3>
+                <div class="hobby-img-group">
+                    <figure style="display:inline-block; margin: 0 24px 16px 0;">
+                        <img src="TravelVietnam.jpg" alt="Vietnam" style="height:160px; border-radius:10px; box-shadow:0 2px 8px #bbb;">
+                        <figcaption style="text-align:center; font-size:0.98em; margin-top:6px;">Vietnam</figcaption>
+                    </figure>
+                    <figure style="display:inline-block; margin: 0 0 16px 0;">
+                        <img src="TravelItaly.jpg" alt="Italy" style="height:160px; border-radius:10px; box-shadow:0 2px 8px #bbb;">
+                        <figcaption style="text-align:center; font-size:0.98em; margin-top:6px;">Italy</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-container" id="contact">
+        <h2>Contact</h2>
+        <ul style="list-style: none; padding-left: 0; font-size: 1.08em;">
+            <li><strong>Phone:</strong> <a href="tel:5713257050" style="color:#2563eb; text-decoration:underline;">571-325-7050</a></li>
+            <li><strong>Email:</strong> <a href="mailto:jjakski@vt.edu" style="color:#2563eb; text-decoration:underline;">jjakski@vt.edu</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/justin-jakubowski/" target="_blank" style="color:#2563eb; text-decoration:underline;">justin-jakubowski</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Justin-Jakubowski" target="_blank" style="color:#2563eb; text-decoration:underline;">Justin-Jakubowski</a></li>
+        </ul>
+    </div>
+</body>
+</html>
